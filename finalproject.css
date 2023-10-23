@@ -1,0 +1,282 @@
+`*{
+  box-sizing:border-box;
+}
+.row::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+[class*="col-"]{
+  float:left;
+  padding:0px;
+}
+
+.col-1{
+  width:8.33%;
+}
+.col-2{
+  width:16.66%;
+}
+.col-3{
+  width:25%;
+}
+.col-4{
+  width:33.3%;
+}
+.col-5{
+  width:41.66%;
+}
+.col-6{
+  width:50%;
+}
+.col-7{
+  width:58.33%;
+}
+.col-8{
+  width:66.66%;
+}
+.col-9{
+  width:75%;
+}
+.col-10{
+  width:83.33%;
+}
+.col-11{
+  width:91.66%;
+}
+.col-12{
+  width:100%;
+}
+
+#first{
+height:120px;
+margin-top:10px;
+}
+.firstnav{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:100;
+  background-color:grey;
+  color:white;
+  }
+.firstnav ul{
+  list-style-type: none;
+
+}
+.firstnav li{
+  display:inline;
+  margin: 50px;
+}
+.firstnav a{
+  text-decoration:none;
+  float:right;
+  text-indent: 5px;
+  padding-right: 10px;
+}
+
+.firstnav a:link{
+  color:white;
+}
+.firstnav :visited{
+  color: blue;
+}
+.firstnav a:hover{
+  background-color: red;
+}
+.firstnav a:active{
+  background-color:white;
+  color:blue;
+}
+#img1{
+  height:137px;
+  width: 236px;
+  margin: auto;
+  margin-top: -460px;
+  margin-right: -210px;
+  padding-left: 5px;
+  float:right;
+}
+#img2{
+  height:170px;
+  width: 200px;
+  margin: auto;
+  margin-top: -350px;
+  margin-left: -260px;
+  position: relative;
+}
+.picture1{
+  height:200px;
+  width: 235px;
+  margin-left: 5px;
+  float:right;
+}
+.picture2{
+  clear:right;
+  height:220px;
+  width: 190px;
+  margin: 5px;
+  margin-top:-10px;
+  float:left;
+}
+
+.col-3 ul{
+  list-style-type: none;
+  margin-top: 60px;
+margin-left: -20px;
+margin-right: 20px;
+}
+.col-3 li{
+  display:block;
+  text-decoration:  none;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.col-3 a:link{
+  color:orange;
+}
+.col-3 :visited{
+  color: green;
+}
+.col-3 a:hover{
+  background-color: white;
+}
+.col-3 a:active{
+  background-color:white;
+  color:blue;
+}
+
+.col-h-3 ul{
+list-style-type: none;
+margin-top: 70px;
+margin-left: -20px;
+margin-right: 20px;
+}
+.col-h-3 li{
+  display:block;
+  text-decoration:  none;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.col-h-3 a:link{
+  color:orange;
+}
+.col-h-3 :visited{
+  color: green;
+}
+.col-h-3 a:hover{
+  background-color: white;
+}
+.col-h-3 a:active{
+  background-color:white;
+  color:blue;
+}
+
+.section{
+  position:relative;
+  top:auto;
+}
+.col-12{
+  background-color: inherit;
+  text-transform: full-width;
+  text-align: justify;
+}
+.col-9{
+  margin-top: 100px;
+}
+header{
+  color: black;
+  margin-top: -50px;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+aside{
+  background-color: grey;
+  padding:10px;
+  color:white;
+  text-align: center;
+  font-size: 14px;
+  order:1;
+}
+body{
+  background-color: #f1f1f1;
+  background-image: radial-gradient(white, blue, grey, blue);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow:hidden;
+}
+#PHQ-9{
+    position:relative;
+    top:auto;
+    display:flow-root;
+    background-color: #ffffff;
+    height: auto;
+    max-width: auto;
+    margin:auto;
+    margin-right: 2px;
+    padding:40px;
+    border:2px groove blue;
+    border-radius: 45px 25px;
+  }
+  #index{
+    position: relative;
+    top:5px;
+    left:50px;
+    right:50px;
+    height:auto;
+    width: 30%;
+    margin: auto;
+    padding: 40px;
+    border:2px groove blue;
+    border-radius: 45px 25px;
+  }
+  .index1{
+  padding: 15px;
+  }
+  .navone ul{
+    list-style-type: none;
+  }
+  .navone li{
+    display:inline;
+    margin: auto;
+  }
+  .navone li a{
+    text-decoration:none;
+    float:right;
+    text-indent: 5px;
+    text-decoration-style: wavy;
+    background-color: black;
+    color: white;
+    margin-top: -60px;
+    padding-right: 10px;
+  }
+  #required{
+    margin-top:-5px;
+  }
+.flex-container{
+  display:flex
+}
+.flex-container > *{
+  margin:-5px;
+  margin-left: 5px;
+  margin-right: 20px;
+  padding:5px;
+}
+body{
+  overflow: scroll;
+}
+html{
+background-size:contain;
+overflow:inherit;
+font-family:cursive;
+}

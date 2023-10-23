@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="keywords" content="HTML 5, CSS 3, JavaScript">
+<meta name="description" content="Dynamic Web Development">
+<meta name="author" content="Mildred">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHQ-9</title>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/finalproject.css">
+</head>
+<body>
+<h1>PHQ-9</h1>
+<a href="#History of PHQ-9">History of PHQ-9</a><br>
+<a href="#Components">Components</a><br>
+<a href="#Uses">Uses</a><br>
+<h3 id="History of PHQ-9">History of PHQ-9</h3>
+  <p>The PHQ-9 is one module of the Patient Health Questionnaire and has nine questions that are simple and short.
+    These questions were designed to help healthcare professionals identify signs or symptoms of depression</p>
+<p>The scientists namely, Dr. Robert L. Spitzer, Dr. Janet B.W. Williams, and Dr. Kurt Kroenke developed PHP first in the mid-1990s then
+  PHP-Q in 1999. It was only in 2001 did PHQ-9 get introduced into the primary health settings.</p>
+<p id="Components">This questionnaire comprises of the same criteria used in the diagnosis of depression under the current "Diagnostic and Statistical Manual of Mental Disorders" (DSM-5) and
+  include:</p>
+1. Feeling depressed or irritable.<br>
+2. Loss of interest or loss of pleasure in doing things.<br>
+3. Overeating or loss of appetite.<br>
+4. Sleep issues (either sleeping too much or trouble falling or staying asleep)<br>
+5. Moving or speaking slowly, or the opposite, speaking quickly or being fidgety</br>
+6. Feeling fatigued or lacking energy</br>
+7. Feeling like a failure, or that you have disappointed your family or yourself</br>
+8. Difficulty concentrating, such as when watching TV or reading a news app<br>
+9. Thinking you'd be better off dead or wishing you could hurt yourself somehow</br>
+  <p id="Uses">About the uses of PHQ-9, the PHQ-9 may be a component of a full psychiatric screening process that evaluates all areas of mental health.
+    The full three-page PHQ assessment is used by some practitioners to assess whether certain mental health issues may be causing or increasing a patient's physical health concerns.</p>
+<p>In addition to looking at depression, the complete PHQ asks about alcohol use, anxiety, and eating behaviors.﻿﻿ Patients' answers can help identify potential issues in these areas.</p>
+<article>
+  <details>
+  <summary>Take an assessment now!</summary>
+<form method ="post" action="thanks.html" autocomplete="off">
+  <div id="PHQ-9">
+  <table>
+    <h2 id="required" style="background-color:grey;">Please complete all information requested below</h2>
+    <tr>
+      <th>AGE:</th>
+      <td><input type="text" name="AGE"/></td>
+      <th>DATE OF BIRTH:</th>
+      <td><input type="text" name="DOB"/></td>
+      <th>GENDER:</th>
+      <td><input type="text" name="GENDER"/></td>
+    </tr>
+    <tr>
+      <th>HOME ADDRESS:</th>
+      <td><input type="text" name="HOME ADD."/></td>
+      <th>NAME AND PHONE NUMBER OF NEXT OF KIN:</th>
+      <td><input type="text" name="PHONE"/></td>
+      <th>ALTERNATIVE:</th>
+      <td><input type="text" name="ALT. NUM."/></td>
+    </tr>
+    <table>
+    <label for ="interest"required>1. Little interest or pleasure in doing things.</label><br/>
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">Not at all
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">Several days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">More than half the days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">Every day<br/>
+    <label for ="motivation"required>2. Feeling down, depressed, or hopeless.</label><br/>
+      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">Not at all
+      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">Several days
+      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">More than half the days
+      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">Every day<br/>
+    <label for ="sleep"required>3. Trouble falling or staying asleep, or sleeping too much.</label><br/>
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">Not at all
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">Several days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">More than half the days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">Every day<br/>
+    <label for ="energy"required>4. Feeling tired or having little energy.</label><br/>
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">Not at all
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">Several days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">More than half the days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">Every day<br/>
+    <label for ="appetite"required>5. Poor appetite or overeating.</label><br/>
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">Not at all
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">Several days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">More than half the days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">Every day<br/>
+    <label for ="guilt"required>6. Feeling bad about yourself- or that you are a failure or have let yourself or your family down.</label><br/>
+    <select id ="guilt" name ="depressionform">
+    <option selected disabled>[Select one]</option>
+    <option value ="depressionform">Several days</option>
+    <option value ="depressionform">Not at all</option>
+    <option value ="depressionform">Everyday</option>
+    <option value ="depressionform">More than half the days</option><br/>
+    </select><br/>
+    <label for ="concentration"required>7. Trouble concentrating on things, such as reading the newspaper or watching television.</label><br/>
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration">Not at all
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration">Several days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration">More than half the days
+    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration" >Every dayrequired<br/>
+    <label for ="coordination"required>8. Moving or speaking so slowly that other people could have noticed? or the opposite- being so figety or resltless that you have been moving around a lot more than usual.</label><br/>
+    <input list ="coordination">
+    <datalist id ="coordination">
+    <option value ="Not at all">
+    <option value ="Several days">
+    <option value ="More than half the days">
+    <option value ="Every day"><br/>
+        </datalist><br/>
+        <label for ="suicidalideation">9. Thoughts that you would be better off dead or of hurting yourself in some days.</label><br/>
+        <input list ="suicidalideation" name "suicidalideation" required autofocus>
+        <datalist id ="suicidalideation">
+        <option value ="Not at all">
+        <option value ="Several days">
+        <option value ="More than half the days">
+        <option value ="Every day"><br/>
+        </datalist><br/>
+      <label for ="numbersessions">10. Number of Sessions</label><br/>
+      <input id ="numbersessions" name ="numbersessions" type ="number" required/><br/>
+      <label for ="date">Date</label><br/>
+      <Input id ="date" name ="date" type ="date"/><br/>
+  </table></br>
+  <input type="submit" name ="submit" value="Submit"/><br/><br/>
+</div>
+</form>
+</details>
+</article>
+</body>
+</html>
