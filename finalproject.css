@@ -92,11 +92,12 @@ margin-top:10px;
 }
 #img1{
   height:137px;
-  width: 236px;
+  width: 230px;
   margin: auto;
-  margin-top: -460px;
-  margin-right: -210px;
-  padding-left: 5px;
+  margin-top: -400px;
+  margin-right: -240px;
+  margin-left: 25px;
+  padding-left: 15px;
   float:right;
 }
 #img2{
@@ -192,6 +193,7 @@ margin-right: 20px;
 }
 .col-9{
   margin-top: 100px;
+  margin-left: -30px;
 }
 header{
   color: black;
