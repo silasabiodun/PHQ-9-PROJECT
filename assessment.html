@@ -10,12 +10,18 @@
 <title>PHQ-9</title>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../css/finalproject.css">
+<script src="../js/validateassessment.js"></script>
+<style>
+span{
+  color:red;
+}
+</style>
 </head>
 <body>
 <h1>PHQ-9</h1>
-<a href="#History of PHQ-9">History of PHQ-9</a><br>
-<a href="#Components">Components</a><br>
-<a href="#Uses">Uses</a><br>
+<a style="color:white" href="#History of PHQ-9">History of PHQ-9</a><br>
+<a style="color:white" href="#Components">Components</a><br>
+<a style="color:white" href="#Uses">Uses</a><br>
 <h3 id="History of PHQ-9">History of PHQ-9</h3>
   <p>The PHQ-9 is one module of the Patient Health Questionnaire and has nine questions that are simple and short.
     These questions were designed to help healthcare professionals identify signs or symptoms of depression</p>
@@ -38,85 +44,85 @@
 <article>
   <details>
   <summary>Take an assessment now!</summary>
-<form method ="post" action="thanks.html" autocomplete="off">
+<form method ="post" name="assessment" action="thanks.html" onsubmit="return validateassessment()"; autocomplete="off">
   <div id="PHQ-9">
   <table>
     <h2 id="required" style="background-color:grey;">Please complete all information requested below</h2>
     <tr>
       <th>AGE:</th>
-      <td><input type="text" name="AGE"/></td>
+      <td><input type="text" name="age"/><span id="ageErr"></span></td>
       <th>DATE OF BIRTH:</th>
-      <td><input type="text" name="DOB"/></td>
+      <td><input type="date" name="dob"/><span id="dobErr"></span></td>
       <th>GENDER:</th>
-      <td><input type="text" name="GENDER"/></td>
+      <td><input type="text" name="gender" onblur="return validategender();"/><span id="genderErr"></span></td>
     </tr>
     <tr>
       <th>HOME ADDRESS:</th>
-      <td><input type="text" name="HOME ADD."/></td>
+      <td><input type="text" name="homeAdd."/><span id="homeAddErr"></span></td>
       <th>NAME AND PHONE NUMBER OF NEXT OF KIN:</th>
-      <td><input type="text" name="PHONE"/></td>
+      <td><input type="text" name="phone"/><span id="phoneErr"></span></td>
       <th>ALTERNATIVE:</th>
       <td><input type="text" name="ALT. NUM."/></td>
     </tr>
     <table>
-    <label for ="interest"required>1. Little interest or pleasure in doing things.</label><br/>
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">Not at all
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">Several days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">More than half the days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="interest">Every day<br/>
-    <label for ="motivation"required>2. Feeling down, depressed, or hopeless.</label><br/>
-      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">Not at all
-      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">Several days
-      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">More than half the days
-      <Input name ="depressionform" value ="depressionform" type ="radio" id ="motivation">Every day<br/>
+    <label for ="interest">1. Little interest or pleasure in doing things.</label><br/>
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="interest">Not at all</br>
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="interest">Several days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="interest">More than half the days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="interest">Every day<br/>
+    <label for ="motivation">2. Feeling down, depressed, or hopeless.</label><br/>
+      <Input name ="depressionform" required value ="depressionform" type ="radio" id ="motivation">Not at all
+      <Input name ="depressionform" required value ="depressionform" type ="radio" id ="motivation">Several days
+      <Input name ="depressionform" required value ="depressionform" type ="radio" id ="motivation">More than half the days
+      <Input name ="depressionform" required value ="depressionform" type ="radio" id ="motivation">Every day <br/>
     <label for ="sleep"required>3. Trouble falling or staying asleep, or sleeping too much.</label><br/>
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">Not at all
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">Several days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">More than half the days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="sleep">Every day<br/>
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="sleep">Not at all
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="sleep">Several days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="sleep">More than half the days
+    <Input name ="depressionform"    ="depressionform" type ="radio" id ="sleep">Every day<br/>
     <label for ="energy"required>4. Feeling tired or having little energy.</label><br/>
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">Not at all
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">Several days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">More than half the days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="energy">Every day<br/>
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="energy">Not at all
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="energy">Several days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="energy">More than half the days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="energy">Every day<br/>
     <label for ="appetite"required>5. Poor appetite or overeating.</label><br/>
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">Not at all
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">Several days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">More than half the days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="appetite">Every day<br/>
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="appetite">Not at all
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="appetite">Several days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="appetite">More than half the days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="appetite">Every day<br/>
     <label for ="guilt"required>6. Feeling bad about yourself- or that you are a failure or have let yourself or your family down.</label><br/>
     <select id ="guilt" name ="depressionform">
     <option selected disabled>[Select one]</option>
-    <option value ="depressionform">Several days</option>
-    <option value ="depressionform">Not at all</option>
-    <option value ="depressionform">Everyday</option>
-    <option value ="depressionform">More than half the days</option><br/>
+    <option required value ="depressionform">Several days</option>
+    <option required value ="depressionform">Not at all</option>
+    <option required value ="depressionform">Everyday</option>
+    <option required value ="depressionform">More than half the days</option><br/>
     </select><br/>
     <label for ="concentration"required>7. Trouble concentrating on things, such as reading the newspaper or watching television.</label><br/>
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration">Not at all
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration">Several days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration">More than half the days
-    <Input name ="depressionform" value ="depressionform" type ="radio" id ="concentration" >Every dayrequired<br/>
-    <label for ="coordination"required>8. Moving or speaking so slowly that other people could have noticed? or the opposite- being so figety or resltless that you have been moving around a lot more than usual.</label><br/>
-    <input list ="coordination">
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="concentration">Not at all
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="concentration">Several days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="concentration">More than half the days
+    <Input name ="depressionform" required value ="depressionform" type ="radio" id ="concentration" >Every dayrequired <span id="depressionformErr"></span><br/>
+    <label for ="coordination">8. Moving or speaking so slowly that other people could have noticed? or the opposite- being so figety or resltless that you have been moving around a lot more than usual.</label><br/>
+    <input name="depressionform" list ="coordination">
     <datalist id ="coordination">
-    <option value ="Not at all">
-    <option value ="Several days">
-    <option value ="More than half the days">
-    <option value ="Every day"><br/>
+    <option required value ="Not at all">
+    <option required value ="Several days">
+    <option required value ="More than half the days">
+    <option required value ="Every day"><br/>
         </datalist><br/>
-        <label for ="suicidalideation">9. Thoughts that you would be better off dead or of hurting yourself in some days.</label><br/>
-        <input list ="suicidalideation" name "suicidalideation" required autofocus>
+        <label for ="suicidalideation"  >9. Thoughts that you would be better off dead or of hurting yourself in some days.</label><br/>
+        <input list ="suicidalideation" name="suicidalideation"  autofocus>
         <datalist id ="suicidalideation">
-        <option value ="Not at all">
-        <option value ="Several days">
-        <option value ="More than half the days">
-        <option value ="Every day"><br/>
+        <option required value ="Not at all">
+        <option required value ="Several days">
+        <option required value ="More than half the days">
+        <option required value ="Every day"><br/>
         </datalist><br/>
       <label for ="numbersessions">10. Number of Sessions</label><br/>
-      <input id ="numbersessions" name ="numbersessions" type ="number" required/><br/>
-      <label for ="date">Date</label><br/>
-      <Input id ="date" name ="date" type ="date"/><br/>
+      <input id ="numbersessions" name ="numbersessions" type ="number"<br/>
+      <label for ="date"  >Date</label><span id="numbersessionsErr"></span> <br/>
+      <Input id ="date" name ="date" type ="date"<br/>
   </table></br>
   <input type="submit" name ="submit" value="Submit"/><br/><br/>
 </div>

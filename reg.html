@@ -9,6 +9,12 @@
 <title>Log in</title>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="../css/finalproject.css">
+<script src="../js/validatereg.js"> </script>
+<style>
+span{
+  color:red;
+}
+</style>
 </head>
 <body>
   <nav class ="navone">
@@ -21,11 +27,11 @@
 <div id="index">
 <section>
   <article >
-  <form method ="post" action="assessment.html" autocomplete="off">
+  <form method ="post" name="reg" onsubmit=" return validatereg()"; action="assessment.html" autocomplete="off">
     <label for="email">Email Address</label><br/>
-    <input type="email" name="email" id="email"/><br/><br/>
+    <input type="email" name="email" id="email" onblur ="return validateemail();"/> <span id="emailErr"></span><br/><br/>
     <label for ="pass">Password</label><br/>
-    <input type="password" name ="password" id="pass"/><br/><br/>
+    <input type="password" name ="pass" id="pass" onblur ="return validatepas();"/> <span id="passErr"></span><br/><br/>
     <input type="submit" name ="submit" value="Login"/><br/><br/>
     Forgot password? <a href="#">Click here</a>
   </form>
